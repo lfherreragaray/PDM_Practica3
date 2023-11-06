@@ -2,8 +2,9 @@
  * API_delay.h
  *
  *  Created on: Nov 5, 2023
- *      Author: ubuntu
+ *      Author: Luis Herrera
  */
+/*Se agregan las librerias necesarias para la ejecucion de la API delay*/
 
 #ifndef __STM32F4XX_HAL_H_
 #include "stm32f4xx_hal.h"
@@ -25,6 +26,7 @@
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+/*Se crean tipos de datos definidos: tick_t, bool_t y delay_t*/
 typedef uint32_t tick_t;
 typedef bool bool_t;
 void delayStruct();
@@ -35,6 +37,7 @@ typedef struct
 		bool_t running;
 	}delay_t;
 
+/*Se agregan los prototipos de las funciones las cuales estan implementadas en API delay.c*/
 void getTick(tick_t time);
 
 void delayInit(delay_t*delay,tick_t duration);

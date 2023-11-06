@@ -22,6 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+/*Se agrega la libreria API delay creada*/
 #include "API_delay.h"
 #include <assert.h>
 /* USER CODE END Includes */
